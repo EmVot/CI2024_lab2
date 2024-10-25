@@ -1,0 +1,48 @@
+Start: Ancona --> Arrival: Rimini || Kilometers travelled: 90.60
+Start: Rimini --> Arrival: Forlì || Kilometers travelled: 46.72
+Start: Forlì --> Arrival: Ravenna || Kilometers travelled: 26.46
+Start: Ravenna --> Arrival: Ferrara || Kilometers travelled: 66.67
+Start: Ferrara --> Arrival: Bologna || Kilometers travelled: 43.43
+Start: Bologna --> Arrival: Modena || Kilometers travelled: 37.29
+Start: Modena --> Arrival: Reggio nell'Emilia || Kilometers travelled: 23.94
+Start: Reggio nell'Emilia --> Arrival: Parma || Kilometers travelled: 26.94
+Start: Parma --> Arrival: Piacenza || Kilometers travelled: 57.65
+Start: Piacenza --> Arrival: Milan || Kilometers travelled: 60.65
+Start: Milan --> Arrival: Monza || Kilometers travelled: 14.51
+Start: Monza --> Arrival: Bergamo || Kilometers travelled: 33.92
+Start: Bergamo --> Arrival: Brescia || Kilometers travelled: 46.02
+Start: Brescia --> Arrival: Verona || Kilometers travelled: 61.42
+Start: Verona --> Arrival: Vicenza || Kilometers travelled: 44.70
+Start: Vicenza --> Arrival: Padua || Kilometers travelled: 30.13
+Start: Padua --> Arrival: Venice || Kilometers travelled: 36.07
+Start: Venice --> Arrival: Trieste || Kilometers travelled: 115.09
+Start: Trieste --> Arrival: Bolzano || Kilometers travelled: 209.68
+Start: Bolzano --> Arrival: Trento || Kilometers travelled: 49.94
+Start: Trento --> Arrival: Novara || Kilometers travelled: 206.69
+Start: Novara --> Arrival: Turin || Kilometers travelled: 84.46
+Start: Turin --> Arrival: Genoa || Kilometers travelled: 123.19
+Start: Genoa --> Arrival: Leghorn || Kilometers travelled: 146.37
+Start: Leghorn --> Arrival: Prato || Kilometers travelled: 74.02
+Start: Prato --> Arrival: Florence || Kilometers travelled: 17.17
+Start: Florence --> Arrival: Perugia || Kilometers travelled: 119.19
+Start: Perugia --> Arrival: Terni || Kilometers travelled: 63.64
+Start: Terni --> Arrival: Rome || Kilometers travelled: 76.54
+Start: Rome --> Arrival: Latina || Kilometers travelled: 56.84
+Start: Latina --> Arrival: Giugliano in Campania || Kilometers travelled: 124.45
+Start: Giugliano in Campania --> Arrival: Naples || Kilometers travelled: 11.15
+Start: Naples --> Arrival: Salerno || Kilometers travelled: 46.25
+Start: Salerno --> Arrival: Foggia || Kilometers travelled: 109.52
+Start: Foggia --> Arrival: Andria || Kilometers travelled: 67.42
+Start: Andria --> Arrival: Bari || Kilometers travelled: 50.18
+Start: Bari --> Arrival: Taranto || Kilometers travelled: 77.63
+Start: Taranto --> Arrival: Messina || Kilometers travelled: 293.02
+Start: Messina --> Arrival: Reggio di Calabria || Kilometers travelled: 12.48
+Start: Reggio di Calabria --> Arrival: Catania || Kilometers travelled: 84.28
+Start: Catania --> Arrival: Syracuse || Kilometers travelled: 51.23
+Start: Syracuse --> Arrival: Palermo || Kilometers travelled: 206.47
+Start: Palermo --> Arrival: Cagliari || Kilometers travelled: 390.28
+Start: Cagliari --> Arrival: Sassari || Kilometers travelled: 173.89
+Start: Sassari --> Arrival: Pescara || Kilometers travelled: 508.61
+Finally going home!	 Start: Pescara --> Arrival: Ancona || Kilometers travelled: 139.24
+Total kilometers travelled: 4436.03
+Total numer of "steps": 45
