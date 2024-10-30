@@ -19,6 +19,31 @@ The first solution is a very simple and fast greedy algorithm; it makes decision
 Acknowledging that the algorithm is quite identical to the one proposed by the professor, it is actually the most efficient in terms of computational time, and since the focus of this laboratory verges on the second algorithm I did not changed it since solving the TSP using other heuristics like MSTs already gives very good solutions and are not as simple as requested.
 
 ### Solution which implements EA strategies 
+This solution tries to implement the strategies of evolutionary algorithms seen during the course till October 31st.
+
+Let's begin with the definition of the individual and its genotype: the individual is coded as the (ordered, of course) sequence of visited cities, i.e. using a fixed length integer array. I chose this representation based on the following factors:
+1. its structure semplicity, in terms of:
+   + Computational cost: as calculating the cost of the arcs is a direct access to the cost matrix, and the representation is a simple vector of integers instead of more complex data structures as tuples or sets
+   + Readness: The 'readness' of the inidividual may seem abstruse in terms of vectos of cities, but since the transaltion is quite simple (again, a direct access to a transaltion matrix), the individual phenotype benefits of a very simple mapping.
+2. its simple manipulability: while developing genetic algorithms which involve crossovers, mutations etc... it is very convinient having some data structure which is easy to maipulate, and an array of integers is the simplest genomes collection we can work on
+3. its intrinsic information encoding: since genes ordering *the* key element of the TSP, sequence order must be a 'must-be' information carrier in the genotype; the natural ordering of integers encodes this property effectevly and elegantly, avoiding more complex comparisons we should develop whith other represenataions. Moreover is the best theoretical representation for 'one-time items' problem approach, which aims to find the best order with no repetition.
+
+Let's move on to the choice of evolution strategies in terms of mutations and crossovers
+For one-time items representation we can choose mutuation strategy among:
++ Swap
++ Scramble
++ Insert
++ Inversion
+Approaching TSP the best suited choices seem to be:
+1. Insert: as preserves most of the relative order, which assumes more importance as the starting point for the algorithm will be the solution found with the first-defined greedy algorithm
+2. Inversion: because swapping the starting and ending point may (very unlikely) be the key element to escape local minima
+
+With regard to crossover strategies, serveral choices are available, but as suggested by the professor, we try to implement the *Inver Over Crossover (IOX)*.
+According to the professor IOX tested on some quite complicated problem outeprformed sub-optimal algorithms. Moved by curiosity I tried implementing another crossover strategy and benchmarking them; for this purpose the *Partially Mapped Crossover (PMX)* is selected, because of its natural fitness for the problem: In PMX, in fact, the idea is to preserve relative positions and partial sequences from two parent solutions, creating offspring that inherit ordering constraints.
+
+
+
+
 
 
 ## Experiments and conclusions
