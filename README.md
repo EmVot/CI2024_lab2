@@ -34,12 +34,22 @@ For one-time items representation we can choose mutuation strategy among:
 + Scramble
 + Insert
 + Inversion
+
 Approaching TSP the best suited choices seem to be:
 1. Insert: as preserves most of the relative order, which assumes more importance as the starting point for the algorithm will be the solution found with the first-defined greedy algorithm
 2. Inversion: because swapping the starting and ending point may (very unlikely) be the key element to escape local minima
 
 With regard to crossover strategies, serveral choices are available, but as suggested by the professor, we try to implement the *Inver Over Crossover (IOX)*.
 According to the professor IOX tested on some quite complicated problem outeprformed sub-optimal algorithms. Moved by curiosity I tried implementing another crossover strategy and benchmarking them; for this purpose the *Partially Mapped Crossover (PMX)* is selected, because of its natural fitness for the problem: In PMX, in fact, the idea is to preserve relative positions and partial sequences from two parent solutions, creating offspring that inherit ordering constraints.
+
+Now let's consider the popoulation management model.
+For the population management a modern GA flow is chosen, i.e:
++ Select parents
++ Perform crossover to generate offspring
++ Mutate the offspring with a probability p_m (implemented in the mutaions definitions)
+
+For the parent selection the 'Tournament selection' strategy is chosen, sinc it does not require population ordering and the selective pressure can be easly adjusted.
+Therefore a 'Steady state' model [(mu+lambbda)-ES] will be deployed.
 
 
 
