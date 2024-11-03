@@ -76,7 +76,7 @@ The results are shown below:
 
 ### EA solution
 The depoyed EA provides decent results; apart from China, all the found solutions are better then the initial greedy solution and way momre close to the optimal solution provided by wolfram.
-Note that for the China case the algorithm fitness was far away from its saturation, suggesting that with more iterations it coud provide way better results (see the jupyter notebook for the related graph)
+Note that for the China case the algorithm fitness was far away from its saturation, suggesting that with more iterations it could provide way better results (see the jupyter notebook for the related graph)
 Results are shown below:
 
 | Country | Initial Greedy Cost | Final EA Cost | Number of Individuals | Steps (Generations) |
