@@ -40,7 +40,7 @@ Approaching TSP the best suited choices seem to be:
 2. Inversion: because swapping the starting and ending point may (very unlikely) be the key element to escape local minima
 
 With regard to crossover strategies, serveral choices are available, but as suggested by the professor, we try to implement the *Inver Over Crossover (IOX)*.
-According to the professor IOX tested on some quite complicated problem outeprformed sub-optimal algorithms. Moved by curiosity I tried implementing another crossover strategy and benchmarking them; for this purpose the *Partially Mapped Crossover (PMX)* is selected, because of its natural fitness for the problem: In PMX, in fact, the idea is to preserve relative positions and partial sequences from two parent solutions, creating offspring that inherit ordering constraints.
+According to the professor IOX tested on some quite complicated problem outeprformed sub-optimal algorithms.
 
 Now let's consider the popoulation management model.
 For the population management a modern GA flow is chosen, i.e:
@@ -74,9 +74,16 @@ The results are shown below:
 | USA     | 39028.59                          | 48050.03        | 326   |
 | China   | NULL                              | 63962.92        | 726   |
 
+### EA solution
+The depoyed EA provides decent results; apart from China, all the found solutions are better then the initial greedy solution and way momre close to the optimal solution provided by wolfram.
+Note that for the China case the algorithm fitness was far away from its saturation, suggesting that with more iterations it coud provide way better results (see the jupyter notebook for the related graph)
+Results are shown below:
 
-
-
-## Conclusions
-
+| Country | Initial Greedy Cost | Final EA Cost | Number of Individuals | Steps (Generations) |
+|---------|----------------------|---------------|-----------------------|----------------------|
+| Vanuatu | 1475.53              | 1345.54      | 32                    | 500                 |
+| Italy   | 4436.03              | 4262.73      | 64                    | 1000                |
+| Russia  | 42334.16             | 37026.32     | 512                   | 50000               |
+| USA     | 48050.02             | 42282.44     | 1024                  | 100000              |
+| China   | 63962.91             | 67936.97     | 1024                  | 100000              |
  
